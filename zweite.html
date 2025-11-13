@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Weißenfels wird Bunt – Projekte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Schriftarten -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background-color: #f0efe9;
+      color: #2b3a42;
+    }
+
+    /* Farb-Leiste oben */
+    .top-bar {
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      height: 60px;
+    }
+
+    /* exakte Farben aus deiner Startseite */
+    .c1 { background:#4c0030; }
+    .c2 { background:#a56586; }
+    .c3 { background:#96a76c; }
+    .c4 { background:#ffd9dd; }
+    .c5 { background:#c97484; }
+    .c6 { background:#b53045; }
+    .c7 { background:#a00018; }
+    .c8 { background:#ff931e; }
+    .c9 { background:#004757; }
+    .c10 { background:#7697d8; }
+    .c11 { background:#7697d8; }
+
+    /* Sprachbuttons */
+    .language-box {
+      position: absolute;
+      right: 25px;
+      top: 12px;
+      display: flex;
+      gap: 10px;
+    }
+    .lang {
+      background: rgba(255,255,255,0.85);
+      padding: 8px 12px;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Oberer Content-Block */
+    .content-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .box-left {
+      background: #fde3c8;
+      padding: 30px 40px;
+      border-radius: 8px;
+    }
+
+    .box-right {
+      background: #e6c4cb;
+      padding: 30px 40px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-family: "Archivo Black", sans-serif;
+      color: #446a8a;
+      font-size: 2rem;
+    }
+
+    .project-button {
+      background: rgba(0,0,0,0.1);
+      padding: 12px 20px;
+      margin: 12px 0;
+      border-radius: 6px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Kartenbereich */
+    .map-section {
+      margin-top: 40px;
+      padding: 40px 0;
+      background: #dee1d6;
+      text-align: center;
+    }
+
+    .map-title {
+      font-size: 2.8rem;
+      font-family: "Archivo Black", sans-serif;
+      color: #446a8a;
+      margin-bottom: 20px;
+    }
+
+    .fake-map {
+      width: 80%;
+      margin: auto;
+      height: 350px;
+      background: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/Openstreetmap_map_example.png");
+      background-size: cover;
+      opacity: 0.45;
+      border-radius: 10px;
+    }
+
+    /* Farb-Leiste unten */
+    .bottom-bar {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      height: 60px;
+      position: relative;
+    }
+
+    /* Kontakt-Knopf */
+    .contact {
+      position: absolute;
+      right: 15px;
+      bottom: 10px;
+      background: rgba(255,255,255,0.9);
+      padding: 10px 18px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Farb-Leiste oben -->
+  <div class="top-bar">
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+    <div class="c6"></div><div class="c7"></div><div class="c8"></div><div class="c9"></div><div class="c10"></div><div class="c11"></div>
+  </div>
+
+  <!-- Sprachbuttons -->
+  <div class="language-box">
+    <div class="lang">DE</div>
+    <div class="lang">EN</div>
+    <div class="lang">UK</div>
+    <div class="lang">BU</div>
+    <div class="lang">RO</div>
+  </div>
+
+  <!-- Oberer Abschnitt: Affiche + Projekte -->
+  <div class="content-top">
+
+    <div class="box-left">
+      <h2>Affiche</h2>
+      <p><strong>13.11</strong> – Tik-Tak Kino</p>
+      <p><strong>15.11</strong> – Subbotnik (Spielplatz Neustadtpark)</p>
+      <p><strong>16.11</strong> – Pitka Backen (Kulti-Multi Backer)</p>
+      <p><strong>16.11</strong> – Disko</p>
+      <p><strong>17.11</strong> – Hof-Fest</p>
+      <p><strong>17.11</strong> – Handschuhwerk Eröffnung</p>
+    </div>
+
+    <div class="box-right">
+      <h2>Laufende Projekte</h2>
+      <div class="project-button">Hof-Kultur</div>
+      <div class="project-button">Lichthäuser</div>
+      <div class="project-button">Wächerhäuser</div>
+    </div>
+
+  </div>
+
+  <!-- Kartenbereich -->
+  <div class="map-section">
+    <div class="map-title">Pin-Wand-Karte</div>
+    <div class="fake-map"></div>
+  </div>
+
+  <!-- Farb-Leiste unten -->
+  <div class="bottom-bar">
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+    <div class="c6"></div><div class="c7"></div><div class="c8"></div><div class="c9"></div><div class="c10"></div><div class="c11"></div>
+
+    <div class="contact">Kontakt</div>
+  </div>
+
+</body>
+</html>
