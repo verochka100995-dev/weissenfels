@@ -5,7 +5,6 @@
   <title>Weißenfels wird Bunt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- GOOGLE FONT: ARCHIVO BLACK -->
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
   <style>
@@ -21,9 +20,8 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      cursor: pointer; /* zeigt an: Seite ist klickbar */
 
-      /* Farbstreifen */
       background: linear-gradient(
         to right,
         #4c0030 0%, #4c0030 10%,
@@ -40,27 +38,38 @@
     }
 
     .hero {
-      color: #ffffff;
+      color: white;
       padding: 1rem 2rem;
-      text-shadow: 0 0.08em 0.25em rgba(0, 0, 0, 0.3);
-      opacity: 0.95; /* leichte Transparenz */
+      opacity: 0.95;
+      text-shadow: 0 0.08em 0.25em rgba(0,0,0,0.3);
     }
 
     .hero-title {
       font-family: "Archivo Black", sans-serif;
-      font-weight: 400;
-      font-size: clamp(3rem, 5vw + 1.5rem, 6rem); /* größer */
+      font-size: clamp(3rem, 5vw + 1.5rem, 6rem);
       margin-bottom: 1rem;
-      letter-spacing: 0.02em;
     }
 
     .hero-subtitle {
+      font-size: clamp(1.2rem, 1vw + 0.7rem, 1.8rem);
       font-weight: 600;
-      font-size: clamp(1rem, 1.2vw + 0.7rem, 1.6rem);
+    }
+
+    /* Unsichtbares Klick-Overlay */
+    a.fullscreen-link {
+      position: absolute;
+      inset: 0;
+      display: block;
+      z-index: 10;
+      text-decoration: none;
     }
   </style>
 </head>
+
 <body>
+  <!-- Unsichtbarer Link über die ganze Seite -->
+  <a class="fullscreen-link" href="zweite.html"></a>
+
   <main class="hero">
     <h1 class="hero-title">Weißenfels wird Bunt</h1>
     <p class="hero-subtitle">Werte | Sprache | Freiraum</p>
